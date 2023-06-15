@@ -8,6 +8,8 @@ variable "dataUrlDepartment" {}
 
 variable "dataUrlCourse" {}
 
+variable "dataUrlAccount" {}
+
 variable "dataSourceUsername" {}
 
 variable "datasourcePassword" {}

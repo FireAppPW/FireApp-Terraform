@@ -1,10 +1,10 @@
-data "terraform_remote_state" "aks" {
-  backend = "local"
+# data "terraform_remote_state" "aks" {
+#   backend = "local"
 
-  config = {
-    path = "../learn-terraform-provision-aks-cluster/terraform.tfstate"
-  }
-}
+#   config = {
+#     path = "../learn-terraform-provision-aks-cluster/terraform.tfstate"
+#   }
+# }
 
 data "azurerm_kubernetes_cluster" "cluster" {
 #   name                = data.terraform_remote_state.aks.outputs.kubernetes_cluster_name
