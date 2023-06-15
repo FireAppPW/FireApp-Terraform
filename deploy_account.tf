@@ -43,6 +43,11 @@ resource "kubernetes_deployment" "account" {
             value = var.datasourcePassword
           }
 
+          env {
+            name = "JWT_SECRET"
+            value = var.jwtSecret
+          }
+
           resources {
             limits = {
               cpu    = var.k8sDeployCpuLimit

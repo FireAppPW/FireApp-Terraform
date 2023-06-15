@@ -14,6 +14,8 @@ variable "dataSourceUsername" {}
 
 variable "datasourcePassword" {}
 
+variable "jwtSecret" {}
+
 variable "vmSize" {
   default = "standard_d2_v3"
 }
